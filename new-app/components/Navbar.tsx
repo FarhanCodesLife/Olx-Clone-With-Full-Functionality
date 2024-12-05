@@ -15,14 +15,15 @@ import {
     SelectTrigger,
     SelectValue,
   } from "@/components/ui/select"
+import { Button } from "./ui/button";
    
 
 const Navbar = () => {
   return (
     <>
-    <div className=" bg-slate-400">
+    <div className="py-4 border-b-2">
 
-      <div className="px-9 py-4 justify-start items-center flex gap-9">
+      <div className="px-9 pb-1  justify-start items-center flex gap-10">
         <div>
           <Image
             src={logo}
@@ -51,9 +52,10 @@ const Navbar = () => {
 
 
 
-      <div>
-        <div className=" flex items-center px-10 ">
-            <div className="w-1/4">
+      <div className="py-2">
+        <div className="flex items-center px-10 ">
+
+            <div className="w-1/4 ">
 
         <Select>
       <SelectTrigger className="w-[300px] h-[50px]">
@@ -81,10 +83,11 @@ const Navbar = () => {
         <IoIosSearch className="text-xl bg-black text-white h-12 w-12 p-2 rounded-r-md  cursor-pointer" />
 
     </div>
-        <div className="flex gap-5 items-center ">
-            <div>chat</div>
+        <div className="w-1/4 flex gap-5 items-center px-10">
+                <div>chat</div>
             <div>notification</div>
             <div>profile</div>
+            <div><Button>+ sell </Button></div>
         </div>
             </div>
 
